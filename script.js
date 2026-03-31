@@ -339,6 +339,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.opacity = '1';
     });
     
-    console.log('🚀 XX激光科技网站已加载完成');
-    console.log('📞 咨询热线：400-XXX-XXXX');
+    console.log('🚀 深圳市瑞特激光科技已加载完成');
+    console.log('📞 咨询热线：0755-89885481');
 });
