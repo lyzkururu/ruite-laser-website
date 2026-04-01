@@ -770,6 +770,117 @@ body {
     color: var(--dark);
 }
 
+/* 技术支持 */
+.support {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.download-categories {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.download-tab {
+    padding: 12px 28px;
+    border: 2px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.download-tab:hover,
+.download-tab.active {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.download-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.download-list.hidden {
+    display: none;
+}
+
+.download-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 24px;
+    background: var(--gray-light);
+    border-radius: var(--radius-md);
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+}
+
+.download-item:hover {
+    background: var(--primary-light);
+    transform: translateX(4px);
+}
+
+.download-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.download-info {
+    flex: 1;
+}
+
+.download-info h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 6px;
+}
+
+.download-info p {
+    font-size: 13px;
+    color: var(--gray);
+}
+
+.download-item .btn-small {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+}
+
+.download-item .btn-small:hover {
+    background: var(--primary-dark);
+}
+
+.support-note {
+    max-width: 900px;
+    margin: 40px auto 0;
+    padding: 20px 24px;
+    background: var(--primary-light);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--primary);
+}
+
+.support-note p {
+    font-size: 14px;
+    color: var(--dark);
+    margin: 0;
+}
+
 /* 应用案例 */
 .cases {
     padding: 100px 0;

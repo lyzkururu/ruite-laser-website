@@ -339,6 +339,26 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.opacity = '1';
     });
     
-    console.log('🚀 深圳市瑞特激光科技已加载完成');
+    // 技术支持下载标签切换
+    const downloadTabs = document.querySelectorAll('.download-tab');
+    const downloadLists = document.querySelectorAll('.download-list');
+    
+    downloadTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            // 移除所有活动状态
+            downloadTabs.forEach(t => t.classList.remove('active'));
+            downloadLists.forEach(list => list.classList.add('hidden'));
+            
+            // 添加当前活动状态
+            this.classList.add('active');
+            const tabName = this.dataset.tab;
+            const targetList = document.getElementById(tabName + '-list');
+            if (targetList) {
+                targetList.classList.remove('hidden');
+            }
+        });
+    });
+    
+    console.log('🚀 深圳市瑞特激光科技有限公司网站已加载完成');
     console.log('📞 咨询热线：0755-89885481');
 });
